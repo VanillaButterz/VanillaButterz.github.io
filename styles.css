@@ -57,20 +57,20 @@ header{
 	overflow: hidden;
 }
 header h1{
-	color: #fff;
+	color: #c90404;
 	float: right;
 	font-size: 90px;
 	font-weight: 500;
 	margin: 10px 140px 0 140px;
-	text-shadow: 5px 5px 5px #000;
+	text-shadow: 5px 5px 5px #0F0F0F;
 }
 header h2{
-	color: #fff;
+	color: #c90404;
 	float: right;
 	font-size: 60px;
 	font-weight: 500;
 	margin: 0 140px;
-	text-shadow: 5px 5px 4px #000;
+	text-shadow: 5px 5px 4px #0F0F0F;
 }
 #wrapper{
 	margin: auto;
