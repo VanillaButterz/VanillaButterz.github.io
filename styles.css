@@ -124,6 +124,8 @@ nav{
 }
 nav a:hover{
 	background-color: #202020;
+	border-bottom: 4px solid #EF0000;
+	transition: all 0.2s ease-in-out;
 }
 .nav-content{
 	position: absolute;
@@ -140,6 +142,8 @@ nav a:hover{
 }
 .nav-content a:hover{
 	background-color: #202020;
+	border-bottom: 4px solid #EF0000;
+	transition: all 0.2s ease-in;
 }
 .nav-sub ul{
 	padding: 0;
@@ -154,6 +158,7 @@ nav a:hover{
 }
 .nav-item:focus{
 	background-color: #202020;
+	border-bottom: 4px solid #EF0000;
 }
 .nav-item:focus ~ .nav-content{
 	max-height: 800px;
