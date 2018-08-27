@@ -82,6 +82,36 @@ header h2{
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
 }
+.invis, .invis2{
+	display: none;
+}
+@media only screen and (max-width: 1400px) {
+    header h1{
+        display: none;
+    }
+	.invis{
+		display: inline-block !important;
+	}
+}
+@media only screen and (max-width: 1500px) {
+    header h1{
+        margin: 10px 80px 0 80px; 
+    }
+	header h2 {
+        margin: 0 80px; 
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .invis, header h1, header h2{
+        display: none !important;
+    }
+	.invis2{
+		display: inline-block !important;
+	}
+	header h1{
+		margin: 10px 140px 0 140px;
+	}
+}
 #wrapper{
 	margin: auto;
 	overflow: auto;
@@ -92,9 +122,15 @@ header h2{
 	grid: 'main main main main right';
 	margin: 30px 60px;
 	background: #ebf2f5;
-	opacity: 0.8;
 	border: 1px solid #bcc2c4;
 	overflow: auto;
+}
+@media only screen and (max-width: 800px) {
+    #wrapper-2 {
+        grid: 
+			'main'
+			'right';
+    }
 }
 article{
 	grid-area: main;
@@ -184,3 +220,68 @@ nav a:hover{
 aside span{
 	font-weight: 700;
 }
+#news-1,#news-2, #news-3{
+	display: inline-block;
+	height: 350px;
+	width: 100%;
+	margin: 15px 0;
+}
+#ss-info{
+	display: inline-block;
+	width: 400px;
+	height: 100%;
+	margin: 0;
+	padding: 40px;
+	background-color: #707070;
+	color: #fff;
+}
+#news-2 #ss-info{
+	float: right;
+}
+#ss-info span{
+	font-size: 30px;
+	font-weight: bold;
+}
+#ss-info p{
+	font-size: 20px;
+}
+#news-1 #img{
+	display: inline-block;
+	margin: 0;
+	float: right;
+	width: calc(100% - 400px);
+	height: 100%;
+	background: #ffffff url(images/news/news2.png) no-repeat center center;
+	background-size: cover;
+}
+#news-2 #img{
+	display: inline-block;
+	margin: 0;
+	float: left;
+	width: calc(100% - 400px);
+	height: 100%;
+	background: #ffffff url(images/news/news1.png) no-repeat center center;
+	background-size: cover;
+}
+#news-3 #img{
+	display: inline-block;
+	margin: 0;
+	float: right;
+	width: calc(100% - 400px);
+	height: 100%;
+	background: #ffffff url(images/news/news1.png) no-repeat center center;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
