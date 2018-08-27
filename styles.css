@@ -88,6 +88,8 @@ header h2{
 	width: 100%;
 }
 #wrapper-2{
+	display: grid;
+	grid: 'main main main main right';
 	margin: 30px 60px;
 	background: #ebf2f5;
 	opacity: 0.8;
@@ -95,7 +97,7 @@ header h2{
 	overflow: auto;
 }
 article{
-	width: calc(100% - 550px);
+	grid-area: main;
 	float: left;
 	margin: 30px 15px 30px 30px;
 }
@@ -103,7 +105,7 @@ article h2{
 	margin: 0;
 }
 aside{
-	width: 460px;
+	grid-area: right; 
 	float: right;
 	margin: 30px 30px 30px 15px;
 }
