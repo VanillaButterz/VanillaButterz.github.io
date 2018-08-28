@@ -119,17 +119,19 @@ header h2{
 }
 #wrapper-2{
 	display: grid;
-	grid: 'main main main main right';
+	grid: 
+	'main main main main right'
+	'foot foot foot foot foot';
 	margin: 30px 60px;
 	background: #ebf2f5;
-	border: 1px solid #bcc2c4;
 	overflow: auto;
 }
 @media only screen and (max-width: 800px) {
     #wrapper-2 {
         grid: 
 			'main'
-			'right';
+			'right'
+			'foot';
     }
 }
 article{
@@ -272,7 +274,21 @@ aside span{
 	background: #ffffff url(images/news/news3.png) no-repeat center center;
 	background-size: cover;
 }
-
+footer{
+	margin: 0;
+	color: #ffffff;
+	background-color: #101010;
+	grid-area: foot;
+	padding: 10px;
+	text-align: center;
+}
+footer a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+footer h6{
+	margin: 10px;
+}
 
 
 
