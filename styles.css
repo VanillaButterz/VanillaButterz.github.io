@@ -289,7 +289,14 @@ footer a{
 footer h6{
 	margin: 10px;
 }
-
+.collum-l{
+	float: left;
+	width: 50%
+}
+.collum-r{
+	float: right;
+	width: 50%
+}
 
 
 
